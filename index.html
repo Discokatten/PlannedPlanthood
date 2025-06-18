@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav>
-        <h1>
+
           <a class="logo" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +28,24 @@
             </svg>
             Planned <br />Planthood</a
           >
-        </h1>
-        <ul role="list">
-          <li role="list"><a href="#">Hem</a></li>
-          <li role="list"><a href="#">Historik</a></li>
-          <li role="list"><a href="#">Tips</a></li>
-          <li role="list"><a href="#">Kontakt</a></li>
+    
+        <ul role="list" class="desktop-nav">
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Historik</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <ul class="menu" role="list">
+          <li>
+            <button class="menu-button"></button>
+          </li>
+
+          <li>
+            <button class="menu-button"></button>
+          </li>
+          <li>
+            <button class="menu-button"></button>
+          </li>
         </ul>
       </nav>
 
@@ -43,76 +55,56 @@
         corporis ipsum.
       </p>
     </header>
-    <section class="gallery-section">
+    <div class="gallery-container">
+      <img
+        src="https://picsum.photos/id/106/1000/800"
+        alt="Decorative picture of flower"
+      />
 
-      <!-- <ul class="gallery-container"> -->
-        <!-- <li role="list" class="gallery__img"> -->
+      <img
+        src="https://picsum.photos/id/152/1000/800"
+        alt="Decorative picture of flower"
+      />
 
-          <img
-          src="https://picsum.photos/id/106/800"
-          
-          alt="pic"
-          />
+      <img
+        src="https://picsum.photos/id/167/1000/800"
+        alt="Decorative picture of flower"
+      />
 
-        <!-- </li> -->
-        <!-- <li role="list" class="gallery__img"> -->
-          <img
-            src="https://picsum.photos/id/152/800"
-        
-            alt="pic"
-          />
-        <!-- </li> -->
-        <!-- <li role="list" class="gallery__img"> -->
-          <img
-            src="https://picsum.photos/id/167/800"
-     
-            alt="pic"
-          />
-        <!-- </li> -->
-        <!-- <li role="list" class="gallery__img"> -->
-          <img
-            src="https://picsum.photos/id/239/800"
-        
-            alt="pic"
-          />
-        <!-- </li> -->
-        <!-- <li role="list" class="gallery__img"> -->
-          <img
-            src="https://picsum.photos/id/306/800"
+      <img
+        src="https://picsum.photos/id/239/1000/800"
+        alt="Decorative picture of flower"
+      />
 
-            alt="pic"
-          />
-        <!-- </li> -->
+      <img
+        src="https://picsum.photos/id/306/1000/800"
+        alt="Decorative picture of flower"
+      />
 
-        <!-- <li role="list" class="gallery__img"> -->
-          <img
-            src="https://picsum.photos/id/360/800"
-    
-            alt="pic"
-          />
-        <!-- </li> -->
-      <!-- </ul> -->
-    </section>
+      <img
+        src="https://picsum.photos/id/360/1000/800"
+        alt="Decorative picture of flower"
+      />
+    </div>
     <section class="divider">
-      <article class="divider-newsletter">
+      <div class="divider__newsletter">
         <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
         <form class="divider-newsletter__form">
-          
-          <label for="email" class="visually-hidden">Enter your email here to sign up for newsletter</label>
+          <label for="email" class="visually-hidden"
+            >Enter your email here to sign up for our newsletter</label
+          >
           <input
             type="email"
             id="email"
             name="email"
             placeholder="email@domain.com"
-            autocomplete="email" required
+            autocomplete="email"
           /><button>Skicka</button>
         </form>
-      </article>
+      </div>
       <div class="svg-background">
         <svg
           aria-hidden="true"
-          width="100"
-          height="100"
           viewBox="0 0 199 196"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -181,28 +173,44 @@
         </svg>
       </div>
     </section>
-    <!-- </section> -->
     <main>
       <ul class="card-container">
         <li class="card">
-  
-
-            <img
+          <img
             src="https://picsum.photos/id/400/400"
             alt="pic"
             class="card__image"
-            />
-       
+          />
 
-            <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
-          <!-- <button class="card__button">Blommor</button>
-          <button class="card__button">Ätbart</button>
-          <button class="card__button">Grönska</button> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ol role="list" class="card__tags__group">
             <li>
               <a href="#" class="card__tag" data-tag="flower">Blommor</a>
@@ -211,7 +219,7 @@
             <li>
               <a href="#" class="card__tag" data-tag="edible">Ätbart</a>
             </li>
-            <li role="list">
+            <li>
               <a href="#" class="card__tag" data-tag="green">Grönska</a>
             </li>
           </ol>
@@ -225,13 +233,12 @@
               src="https://avatar.iran.liara.run/public/95"
               alt=""
               class="card__avatar"
-              height="20px"
             />
-        
-            <section class="card__author">
+
+            <div class="card__author">
               <p class="card__author__name">Coolio</p>
               <p>2024-04-01</p>
-            </section>
+            </div>
           </footer>
         </li>
         <li class="card">
@@ -240,12 +247,35 @@
             alt=""
             class="card__image"
           />
-           <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ul class="card__tags__group" role="list">
             <li>
               <a href="#" class="card__tag" data-tag="sunloving">Solälskande</a>
@@ -258,9 +288,6 @@
             </li>
           </ul>
 
-          <!-- <button class="card__button">Solälskande</button>
-          <button class="card__button">Lättodlat</button>
-          <button class="card__button">Ätbart</button> -->
           <h3>Tomat</h3>
 
           <p>
@@ -271,13 +298,12 @@
             <img
               src="https://avatar.iran.liara.run/public/59"
               alt=""
-              height="20px"
               class="card__avatar"
             />
-            <section class="card__author">
+            <div class="card__author">
               <p class="card__author__name">Anna Odlare</p>
               <p>2024-12-05</p>
-            </section>
+            </div>
           </footer>
         </li>
         <li class="card">
@@ -286,12 +312,35 @@
             alt=""
             class="card__image"
           />
-               <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ul role="list" class="card__tags__group">
             <li>
               <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
@@ -306,10 +355,6 @@
               <a href="#" class="card__tag" data-tag="flower">Blommor</a>
             </li>
           </ul>
-          <!-- <button class="card__button">Dekorativ</button>
-          <button class="card__button">Färgstark</button>
-          <button class="card__button">Tålig</button>
-          <button class="card__button">Blommor</button> -->
 
           <h3>Pelargon</h3>
 
@@ -320,14 +365,13 @@
           <footer class="card__footer">
             <img
               src="https://avatar.iran.liara.run/public/42"
-              height="20px"
               alt=""
               class="card__avatar"
             />
-            <section class="card__author">
+            <div class="card__author">
               <p class="card__author__name">Blomsterkalle</p>
               <p>2024-12-03</p>
-            </section>
+            </div>
           </footer>
         </li>
         <li class="card">
@@ -336,12 +380,35 @@
             alt=""
             class="card__image"
           />
-             <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ul role="list" class="card__tags__group">
             <li>
               <a href="#" class="card__tag" data-tag="spices"> Kryddor </a>
@@ -353,9 +420,6 @@
               <a href="#" class="card__tag" data-tag="sunloving">Solälskande</a>
             </li>
           </ul>
-          <!-- <button class="card__button">Kryddor</button>
-          <button class="card__button">Doftande</button>
-          <button class="card__button">Solälskande</button> -->
 
           <h3>Basilika</h3>
           <p>
@@ -365,14 +429,13 @@
           <footer class="card__footer">
             <img
               src="https://avatar.iran.liara.run/public/98"
-              height="20px"
               alt=""
               class="card__avatar"
             />
-            <section class="card__author">
+            <div class="card__author">
               <p class="card__author__name">Krydd-Malin</p>
               <p>2024-12-07</p>
-            </section>
+            </div>
           </footer>
         </li>
         <li class="card">
@@ -381,12 +444,35 @@
             alt=""
             class="card__image"
           />
-             <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ul role="list" class="card__tags__group">
             <li>
               <a href="#" class="card__tag" data-tag="fast">Snabbväxande</a>
@@ -398,13 +484,7 @@
               <a href="#" class="card__tag" data-tag="edible">Ätbart</a>
             </li>
           </ul>
-
-          <!-- <button class="card__button">Snabbväxande</button>
-          <button class="card__button">Grönska</button>
-          <button class="card__button">Ätbart</button> -->
-
           <h3>Sallad</h3>
-
           <p>
             Sallad är en av de enklaste grönsakerna att odla och ger snabba
             resultat för färska måltider.
@@ -412,14 +492,13 @@
           <footer class="card__footer">
             <img
               src="https://avatar.iran.liara.run/public/89"
-              height="20px"
               alt=""
               class="card__avatar"
             />
-            <section class="card__author">
+            <div class="card__author">
               <p class="card__author__name">Grönis</p>
               <p>2024-12-06</p>
-            </section>
+            </div>
           </footer>
         </li>
 
@@ -429,12 +508,35 @@
             alt=""
             class="card__image"
           />
-   <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 71 93" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z" fill="white"/>
-              <path d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z" fill="white"/>
-              <path d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-              <path d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
           <ul role="list" class="card__tags__group">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
@@ -445,29 +547,414 @@
             <li>
               <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
             </li>
-
-            <!-- <button class="card__button">Luftfuktande</button>
-              <button class="card__button">Grönska</button>
-              <button class="card__button">Dekorativ</button> -->
           </ul>
-      
-            <h3>Ormbunke</h3>
-            <p>
-              En klassisk växt som passar perfekt i badrummet eller på skuggiga
-              platser.
-            </p>
-  
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
           <footer class="card__footer">
             <img
               src="https://avatar.iran.liara.run/public/15"
-              height="20px"
               alt=""
               class="card__avatar"
             />
-            <section class="card__author">
+            <div class="card__author">
               <p class="card__author__name">Naturvännen</p>
               <p>2024-12-08</p>
-            </section>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
+          </footer>
+        </li>
+        <li class="card">
+          <img
+            src="https://picsum.photos/id/208/400"
+            alt=""
+            class="card__image"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="200px"
+            viewBox="0 0 71 93"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+              fill="white"
+            />
+            <path
+              d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+              fill="white"
+            />
+            <path
+              d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <ul role="list" class="card__tags__group">
+            <li>
+              <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="green">Grönska</a>
+            </li>
+            <li>
+              <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
+            </li>
+          </ul>
+
+          <h3>Ormbunke</h3>
+          <p>
+            En klassisk växt som passar perfekt i badrummet eller på skuggiga
+            platser.
+          </p>
+
+          <footer class="card__footer">
+            <img
+              src="https://avatar.iran.liara.run/public/15"
+              alt=""
+              class="card__avatar"
+            />
+            <div class="card__author">
+              <p class="card__author__name">Naturvännen</p>
+              <p>2024-12-08</p>
+            </div>
           </footer>
         </li>
       </ul>
@@ -515,65 +1002,53 @@
             delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio
             nam quaerat doloribus?
           </p>
-          <a class="divider-previous__link" href="#" alt=""
-          ><button>Planterade plantor</button></a
+          <a class="divider-previous__link" href="#"
+            ><button>Planterade plantor</button></a
           >
         </div>
       </article>
     </aside>
     <footer>
       <div class="footer-content">
-      <a class="white-logo" href="#">
-        <!-- <div class="svg-background"> -->
+        <a class="white-logo" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="214"
+            height="210"
+            viewBox="0 0 214 210"
+          >
+            <g fill="none" stroke-width="12">
+              <path
+                d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z"
+              />
+              <path
+                d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z"
+              />
+            </g>
+          </svg>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="214"
-          height="210"
-          viewBox="0 0 214 210"
-        >
-          <g fill="none" stroke-width="12">
-            <path
-              d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z"
-            />
-            <path
-              d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z"
-            />
-          </g>
-        </svg>
-        <!-- </div> -->
+          Planned <br />Planthood
+        </a>
 
-        Planned <br />Planthood
-      </a>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          veniam ducimus aut sint atque ullam alias perspiciatis fuga.
+          Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione
+          earum. Iure, eius molestias?
+        </p>
+        <ol role="list">
+          <li>
+            <img src="./Assets/images/icon-phone.svg" alt="" />
+            <a href="#"> Telefon: 020-1234567</a>
+          </li>
+          <li>
+            <img src="./Assets/images/icon-email.svg" alt="" />
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam
-        ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur
-        nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius
-        molestias?
-      </p>
-     <ol role="list">
-<li>
-  
-  <img src="./Assets/images/icon-phone.svg" alt="" /> 
-  <a href="#"> Telefon: 020-1234567</a>
-
-</li>
-<li>
-  
-  <img src="./Assets/images/icon-email.svg" alt="" />
-  
-<a href="#">
-
-  info@plannedplant.com</a
-  >
-
-
-</li>
-       
-      </ol>
+            <a href="#"> info@plannedplant.com</a>
+          </li>
+        </ol>
       </div>
-      <ol role="list">
+      <ol role="list" class="footer-nav">
         <li><a href="#" class="link">Hem</a></li>
         <li><a href="#" class="link">Historik</a></li>
         <li><a href="#" class="link">Tips</a></li>
