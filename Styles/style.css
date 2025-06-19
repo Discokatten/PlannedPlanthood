@@ -178,14 +178,14 @@ h3 {
 
 body {
   background-color: light-dark(var(--clr-primary-light-2), var(--clr-neutral-400));
-  
+
 }
 
 a {
   text-decoration: none;
   color: var(--clr-accent);
   font-size: var(--fs-500);
-  
+
   &:hover,
   &:focus-visible {
     background-color: var(--clr-accent);
@@ -231,13 +231,14 @@ nav {
 }
 
 .logo {
+
   &:hover,
   &:focus-visible {
     >svg {
       stroke: var(--clr-neutral-100)
     }
   }
-  
+
   >svg {
     stroke: var(--clr-accent);
     width: 50px;
@@ -314,8 +315,7 @@ nav {
     place-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
-  }
+      }
 
   .previous-content {
     max-width: 50ch;
@@ -433,12 +433,10 @@ img {
 }
 
 
-address {
-  p {
-    font-style: normal;
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-500);
-  }
+.card-author {
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-500);
+
 }
 
 
