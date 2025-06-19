@@ -556,6 +556,9 @@ img {
     margin: 1rem;
     max-width: 45ch;
   }
+  .footer-nav > * {
+    margin:1rem;
+  }
 
 }
 
