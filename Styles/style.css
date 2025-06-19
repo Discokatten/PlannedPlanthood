@@ -231,7 +231,6 @@ nav {
 }
 
 .logo {
-
   &:hover,
   &:focus-visible {
     >svg {
@@ -281,7 +280,7 @@ nav {
   }
 
   h2 {
-    width: clamp(15ch, 30ch, 90ch);
+   max-width: 50ch;
   }
 
   .newsletter-form {
@@ -563,6 +562,13 @@ img {
     display: grid;
     grid-template-rows: 1fr;
     place-items: center;
+    
+  }
+
+   .previous-content h2, .previous-content p{
+
+     text-align: center;
+     margin-bottom: var(--fs-400);
   }
 
   .card-container {
