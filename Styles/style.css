@@ -198,7 +198,8 @@ header {
   text-align: center;
 
   p {
-    margin: var(--fs-700);
+    margin: var(--fs-200) auto;
+    width: 45ch;
   }
 }
 
@@ -228,6 +229,7 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  font-weight: var(--fw-semi-bold);
 }
 
 .logo {
@@ -279,11 +281,7 @@ nav {
     background-color: var(--clr-accent);
   }
 
-  h2 {
-   max-width: 50ch;
-  }
-
-  .newsletter-form {
+   .newsletter-form {
     font-family: var(--font-base);
     border: 0.1rem solid black;
     min-width: 20ch;
@@ -308,9 +306,18 @@ nav {
     }
     
   }
+  .newsletter-content {
+h2{
+
+  max-width: 35ch;
+}
+
+  }
   .previous-link {
     display: flex;
     justify-self: flex-end;
+        border-radius:2rem;
+
     font-size: var(--fs-500);
     background-color: var(--clr-accent);
     padding-inline: var(--fs-400);
@@ -448,7 +455,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   place-self: center;
   gap: var(--fs-400);
-  grid-template-rows: repeat(4, auto auto auto 1fr auto);
+  grid-auto-rows: auto auto auto 1fr auto;
 }
 
 .card-tag {
@@ -565,7 +572,7 @@ img {
     place-items: center;
     
   }
-   .previous-content h2, .previous-content p{
+   .previous-content-h2, .previous-content-p{
      text-align: center;
      margin-bottom: var(--fs-400);
   }
