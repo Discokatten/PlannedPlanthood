@@ -7,28 +7,29 @@
     <title>Planned Planthood</title>
   </head>
   <body>
-    <header>
-      <nav><h1>
 
-        <a class="logo" href="#">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="214"
-          height="210"
-          viewBox="0 0 214 210"
+    <header>
+      <nav>
+        <h1>
+          <a class="logo" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="214"
+              height="210"
+              viewBox="0 0 214 210"
+            >
+              <g fill="none" stroke-width="12">
+                <path
+                  d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z"
+                />
+                <path
+                  d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z"
+                />
+              </g>
+            </svg>
+            Planned <br />Planthood</a
           >
-          <g fill="none" stroke-width="12">
-            <path
-            d="M116.833 193.533C117.406 192.909 117.969 192.279 118.522 191.645L168.173 160.226C206.289 136.107 217.36 86.0907 192.816 48.5247C189.153 42.9185 181.619 41.3343 175.976 44.905L125.764 76.6782C121.37 70.1605 116.086 64.0725 109.92 58.5872L52.4904 7.49831C46.8526 2.48295 38.1677 2.90777 33.061 8.46735C-2.89261 47.6094 0.211903 108.041 39.9737 143.413L97.4031 194.502C103.041 199.517 111.726 199.092 116.833 193.533Z"
-            />
-            <path
-            d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z"
-            />
-          </g>
-        </svg>
-          Planned <br />Planthood</a
-        >
-      </h1>
+        </h1>
 
         <ul role="list" class="desktop-nav">
           <li><a href="#">Hem</a></li>
@@ -36,25 +37,25 @@
           <li><a href="#">Tips</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
-        <label for="menu1" class="visually-hidden"
-        >Gonna be a pretty hamburger in due time</label
-      >
-        <label for="menu2" class="visually-hidden"
-        >Gonna be a pretty hamburger in due time</label
-      >
-        <label for="menu3" class="visually-hidden"
-        >Gonna be a pretty hamburger in due time</label
-      >
         <ul class="menu" role="list">
           <li>
-            <button class="menu-button" id="menu1"></button>
+            <label for="menu-1" class="visually-hidden"
+              >Gonna be a pretty hamburger in due time</label
+            >
+            <button class="menu-button" id="menu-1"></button>
           </li>
 
           <li>
-            <button class="menu-button" id="menu2"></button>
+            <label for="menu-2" class="visually-hidden"
+              >Gonna be a pretty hamburger in due time</label
+            >
+            <button class="menu-button" id="menu-2"></button>
           </li>
           <li>
-            <button class="menu-button" id="menu3"></button>
+            <label for="menu-3" class="visually-hidden"
+              >Gonna be a pretty hamburger in due time</label
+            >
+            <button class="menu-button" id="menu-3"></button>
           </li>
         </ul>
       </nav>
@@ -65,7 +66,8 @@
         corporis ipsum.
       </p>
     </header>
-    <div class="gallery-container">
+
+    <section class="gallery-container">
       <img
         src="https://picsum.photos/id/106/1000/800"
         alt="Decorative picture of flower"
@@ -95,7 +97,8 @@
         src="https://picsum.photos/id/360/1000/800"
         alt="Decorative picture of flower"
       />
-    </div>
+    </section>
+
     <section class="newsletter">
       <div class="newsletter-content">
         <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
@@ -183,8 +186,10 @@
         </svg>
       </div>
     </section>
+
     <main>
       <ul class="card-container">
+
         <li class="card">
           <img
             src="https://picsum.photos/id/400/400"
@@ -221,7 +226,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ol role="list" class="card__tags__group">
+          <ol role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="flower">Blommor</a>
             </li>
@@ -238,19 +243,25 @@
             Gurka växer snabbt, är enkel att odla och ger mängder med gurkor,
             bara man är noga med vattning, omplantering, duschning och gödsling.
           </p>
-          <footer class="card__footer">
+
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/95"
               alt=""
               class="card__avatar"
             />
 
-            <div class="card__author">
-              <p class="card__author__name">Coolio</p>
-              <p>2024-04-01</p>
+         
+                <div>
+              <address class="card-author"><p>
+                Coolio
+              </p>
+            </adress>
+              <time datetime="2024-04-01">2024-04-01</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/200/400"
@@ -286,7 +297,8 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul class="card__tags__group" role="list">
+
+          <ul class="wrapper" role="list">
             <li>
               <a href="#" class="card__tag" data-tag="sunloving">Solälskande</a>
             </li>
@@ -304,18 +316,23 @@
             En perfekt grönsak att odla på balkongen eller i trädgården. Ger
             riklig skörd under sommaren.
           </p>
-          <footer class="card__footer">
+
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/59"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Anna Odlare</p>
-              <p>2024-12-05</p>
+                       <div>
+              <address class="card-author"><p>
+                Anna Odlare
+              </p>
+            </adress>
+              <time datetime="2024-12-05">2024-12-05</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/202/400"
@@ -351,7 +368,8 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="decorative">Dekorativ</a>
             </li>
@@ -372,18 +390,25 @@
             En vacker och lättskött blomma som trivs både inne och ute under
             sommaren.
           </p>
-          <footer class="card__footer">
+
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/42"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Blomsterkalle</p>
-              <p>2024-12-03</p>
+           
+                  <div>
+              <address class="card-author"><p>
+                Blomsterkalle
+              </p>
+            </adress>
+              <time datetime="2024-12-03">2024-12-03</time>
             </div>
           </footer>
+   
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/204/400"
@@ -419,7 +444,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="spices"> Kryddor </a>
             </li>
@@ -436,18 +461,22 @@
             En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett
             soligt fönster.
           </p>
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/98"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Krydd-Malin</p>
-              <p>2024-12-07</p>
+                  <div>
+              <address class="card-author"><p>
+                Krydd-Malin
+              </p>
+            </adress>
+              <time datetime="2024-12-07">2024-12-07</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/206/400"
@@ -483,7 +512,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="fast">Snabbväxande</a>
             </li>
@@ -494,20 +523,26 @@
               <a href="#" class="card__tag" data-tag="edible">Ätbart</a>
             </li>
           </ul>
+
           <h3>Sallad</h3>
           <p>
             Sallad är en av de enklaste grönsakerna att odla och ger snabba
             resultat för färska måltider.
           </p>
-          <footer class="card__footer">
+
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/89"
               alt=""
               class="card__avatar"
             />
             <div class="card__author">
-              <p class="card__author__name">Grönis</p>
-              <p>2024-12-06</p>
+                   <div>
+              <address class="card-author"><p>
+                Grönis
+              </p>
+            </adress>
+              <time datetime="2024-12-06">2024-12-06</time>
             </div>
           </footer>
         </li>
@@ -547,7 +582,8 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -565,18 +601,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+            <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -612,7 +652,8 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -630,18 +671,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+         <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -677,7 +722,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -695,18 +740,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+          <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -742,7 +791,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -760,18 +809,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+        <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -807,7 +860,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -825,18 +878,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+            <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -872,7 +929,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -890,18 +947,22 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+          <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
+
         <li class="card">
           <img
             src="https://picsum.photos/id/208/400"
@@ -937,7 +998,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <ul role="list" class="card__tags__group">
+          <ul role="list" class="wrapper">
             <li>
               <a href="#" class="card__tag" data-tag="air">Luftfuktande</a>
             </li>
@@ -955,22 +1016,26 @@
             platser.
           </p>
 
-          <footer class="card__footer">
+          <footer class="wrapper">
             <img
               src="https://avatar.iran.liara.run/public/15"
               alt=""
               class="card__avatar"
             />
-            <div class="card__author">
-              <p class="card__author__name">Naturvännen</p>
-              <p>2024-12-08</p>
+              <div>
+              <address class="card-author"><p>
+                Naturvännen
+              </p>
+            </adress>
+              <time datetime="2024-12-08">2024-12-08</time>
             </div>
           </footer>
         </li>
       </ul>
     </main>
+
     <aside class="previous">
-      <div class="previous-wrapper">
+      <div class="wrapper">
         <div class="svg-background">
           <svg
             aria-hidden="true"
@@ -1012,13 +1077,13 @@
             delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio
             nam quaerat doloribus?
           </p>
-          <!-- <a class="divider-previous__link" href="#" -->
-          <a href="#"
-            ><button class="previous-button">Planterade plantor</button></a
+          <a href="#" class="previous-link"
+            >Planterade plantor</a
           >
         </div>
       </div>
     </aside>
+
     <footer class="footer">
       <div class="footer-content">
         <a class="white-logo" href="#">
@@ -1048,6 +1113,7 @@
             earum. Iure, eius molestias?
           </p>
         </div>
+
         <ol role="list" class="flow">
           <li class="footer-contact">
             <img src="./Assets/images/icon-phone.svg" alt="" />
@@ -1056,15 +1122,15 @@
           <li class="footer-contact">
             <img src="./Assets/images/icon-email.svg" alt="" />
 
-            <a href="#"> info@plannedplant.com</a>
+            <a href="#">info@plannedplant.com</a>
           </li>
         </ol>
       </div>
       <ol role="list" class="footer-nav">
-        <li><a href="#" class="flow">Hem</a></li>
-        <li><a href="#" class="flow">Historik</a></li>
-        <li><a href="#" class="flow">Tips</a></li>
-        <li><a href="#" class="flow">Kontakt</a></li>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Historik</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">Kontakt</a></li>
       </ol>
     </footer>
   </body>
