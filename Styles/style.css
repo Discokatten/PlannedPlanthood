@@ -440,12 +440,11 @@ img {
 }
 
 
-
 .wrapper {
   display: flex;
   gap: var(--fs-100);
   flex-wrap: wrap;
-
+  align-items: center;
 }
 
 .card-container {
