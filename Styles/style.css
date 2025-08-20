@@ -233,6 +233,7 @@ nav {
 }
 
 .logo {
+
   &:hover,
   &:focus-visible {
     >svg {
@@ -281,7 +282,7 @@ nav {
     background-color: var(--clr-accent);
   }
 
-   .newsletter-form {
+  .newsletter-form {
     font-family: var(--font-base);
     border: 0.1rem solid black;
     min-width: 20ch;
@@ -297,33 +298,36 @@ nav {
     padding: var(--fs-100);
     border: var(--border-neutral);
     border-radius: var(--border-radius);
-    
+
     &:focus,
     &:hover {
       background-color: var(--clr-primary-light-2);
       color: var(--clr-accent);
       border: var(--border-green);
     }
-    
+
   }
+
   .newsletter-content {
-h2{
+    h2 {
 
-  max-width: 35ch;
-}
+      max-width: 35ch;
+    }
 
   }
+
   .previous-link {
     display: flex;
     justify-self: flex-end;
-        border-radius:2rem;
+    border-radius: 2rem;
 
     font-size: var(--fs-500);
     background-color: var(--clr-accent);
     padding-inline: var(--fs-400);
+
     &:focus,
     &:hover {
-      background-color: light-dark(var(--clr-neutral-100),var(--clr-primary-light-2));
+      background-color: light-dark(var(--clr-neutral-100), var(--clr-primary-light-2));
     }
   }
 
@@ -332,7 +336,7 @@ h2{
     place-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-      }
+  }
 
   .previous-content {
     max-width: 50ch;
@@ -446,7 +450,7 @@ img {
   gap: var(--fs-100);
   flex-wrap: wrap;
   align-items: center;
-  
+
 }
 
 .card-container {
@@ -524,6 +528,15 @@ img {
     text-decoration: underline;
   }
 }
+.mobile-nav{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 0px;
+  }
 
 
 @media (width < 1070px) {
@@ -534,11 +547,11 @@ img {
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    width: 0px;
   }
 
-  .menu {
-    .menu-button {
+  .mobile-nav {
+    .mobile-nav-button {
       display: flex;
       flex-direction: row;
       background-color: var(--clr-accent);
@@ -570,11 +583,12 @@ img {
     display: grid;
     grid-template-rows: 1fr;
     place-items: center;
-    
+
   }
-   .previous-content-h2, .previous-content-p{
-     text-align: center;
-     margin-bottom: var(--fs-400);
+
+  .previous-content-h2, .previous-content-p {
+    text-align: center;
+    margin-bottom: var(--fs-400);
   }
 
   .card-container {
